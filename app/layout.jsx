@@ -4,7 +4,6 @@ import ScrollToTop from "../components/ScrollToTop";
 
 import "../styles/globals.css";
 
-// Define metadata correctly
 export const metadata = {
   title: "Drainage Hero",
   description: "Professional drainage services for your needs.",

@@ -1,5 +1,12 @@
 import { services } from "@/constants";
-import { FaTools, FaVideo, FaWrench, FaSearch, FaToolbox, FaRecycle } from "react-icons/fa";
+import {
+  FaTools,
+  FaVideo,
+  FaWrench,
+  FaSearch,
+  FaToolbox,
+  FaRecycle,
+} from "react-icons/fa";
 
 const icons = { FaTools, FaVideo, FaWrench, FaSearch, FaToolbox, FaRecycle };
 
@@ -12,7 +19,11 @@ export default function Services() {
           const Icon = icons[icon];
           return (
             <div key={index} className="p-6 bg-tan rounded shadow-md">
-              <Icon size={40} className="mx-auto mb-4" />
+              {Icon ? (
+                <Icon size={40} className="mx-auto mb-4" />
+              ) : (
+                <div className="mx-auto mb-4 text-red-500">Icon Missing</div>
+              )}
               <h3 className="font-bold text-white text-xl">{title}</h3>
               <p className="mt-2">{description}</p>
             </div>

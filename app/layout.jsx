@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
-import "../styles/globals.css";
+import "@/styles/globals.css";
 
 export const metadata = {
   title: "Drainage Hero",

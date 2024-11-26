@@ -1,4 +1,4 @@
-import { services } from "../constants";
+import { services } from "@/constants";
 import { FaTools, FaPoundSign, FaUsers } from "react-icons/fa";
 
 const icons = { FaTools, FaPoundSign, FaUsers };

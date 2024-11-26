@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-// Define Zod schema for form validation
+// Zod schema for form validation
 const contactFormSchema = z.object({
   name: z
     .string()
@@ -51,7 +51,7 @@ export default function Contact() {
       .then(() => {
         setIsSubmitting(false);
         setIsSuccess(true);
-        reset(); // Reset form after successful submission
+        reset();
       })
       .catch((err) => {
         setIsSubmitting(false);

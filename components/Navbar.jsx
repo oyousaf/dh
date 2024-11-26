@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS, socialLinks } from "../constants";
+import { NAV_LINKS, socialLinks } from "@/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

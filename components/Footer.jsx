@@ -1,4 +1,4 @@
-import { socialLinks } from "../constants";
+import { socialLinks } from "@/constants";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

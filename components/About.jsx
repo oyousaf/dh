@@ -1,8 +1,8 @@
 "use client";
-import { aboutTiles } from "../constants";
+
 import { FaBullhorn, FaHandshake, FaHistory, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { gallery } from "../constants";
+import { aboutTiles, gallery } from "@/constants";
 
 const icons = { FaBullhorn, FaHandshake, FaHistory, FaStar };
 

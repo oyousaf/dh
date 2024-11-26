@@ -33,6 +33,7 @@ export const aboutTiles = [
 ];
 
 import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
+
 export const socialLinks = [
   { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
   { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },

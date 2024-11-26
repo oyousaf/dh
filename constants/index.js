@@ -5,12 +5,21 @@ export const NAV_LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
+import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
+
+export const socialLinks = [
+  { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
+  { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },
+  { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
+  { name: "Phone", href: "tel:07722128784", icon: FaPhone },
+];
+
 export const aboutTiles = [
   {
     title: "Our Mission",
     description:
       "We are committed to providing reliable and professional drainage services across the UK, helping homeowners and businesses solve their drainage problems quickly and efficiently.",
-    icon: "FaBullhorn",
+    icon: FaBullhorn,
   },
   {
     title: "Our Values",
@@ -30,15 +39,6 @@ export const aboutTiles = [
       "We combine expert knowledge, advanced technology, and a customer-first approach to deliver the best drainage services in the industry.",
     icon: "FaStar",
   },
-];
-
-import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
-
-export const socialLinks = [
-  { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
-  { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },
-  { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { name: "Phone", href: "tel:07722128784", icon: FaPhone },
 ];
 
 export const gallery = [

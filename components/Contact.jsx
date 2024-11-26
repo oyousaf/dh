@@ -85,6 +85,7 @@ export default function Contact() {
               {...register("name")}
               placeholder="Your Name"
               className="w-full p-4 text-beige rounded-lg"
+              autoComplete="name"
             />
             {errors.name && (
               <p className="mt-1 text-red-300 text-sm">{errors.name.message}</p>
@@ -99,6 +100,7 @@ export default function Contact() {
               {...register("email")}
               placeholder="Your Email"
               className="w-full p-4 text-beige rounded-lg"
+              autoComplete="email"
             />
             {errors.email && (
               <p className="mt-1 text-red-300 text-sm">
@@ -115,6 +117,7 @@ export default function Contact() {
               {...register("subject")}
               placeholder="Subject"
               className="w-full p-4 text-beige rounded-lg"
+              autoComplete="off"
             />
             {errors.subject && (
               <p className="mt-1 text-red-300 text-sm">
@@ -132,6 +135,7 @@ export default function Contact() {
               placeholder="Your Message"
               rows="5"
               className="w-full p-4 text-beige rounded-lg"
+              autoComplete="off"
             ></textarea>
             {errors.message && (
               <p className="mt-1 text-red-300 text-sm">
@@ -141,7 +145,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className={`w-full py-3 px-6 font-bold bg-gray text-beige hover:text-tan rounded-lg shadow-md hover:bg-opacity-90 transition ${
+            className={`w-full py-3 px-6 font-bold bg-gray text-tan hover:text-white rounded-lg shadow-md hover:bg-opacity-90 transition ${
               isSubmitting && "opacity-50 cursor-not-allowed"
             }`}
             disabled={isSubmitting}

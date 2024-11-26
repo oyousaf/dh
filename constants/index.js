@@ -32,11 +32,12 @@ export const aboutTiles = [
   },
 ];
 
+import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
 export const socialLinks = [
-  { name: "Facebook", href: "https://facebook.com", icon: "FaFacebook" },
-  { name: "Twitter", href: "https://twitter.com", icon: "FaTwitter" },
-  { name: "Instagram", href: "https://instagram.com", icon: "FaInstagram" },
-  { name: "Phone", href: "tel:07722128784", icon: "FaPhone" },
+  { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
+  { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },
+  { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
+  { name: "Phone", href: "tel:07722128784", icon: FaPhone },
 ];
 
 export const gallery = [
@@ -89,13 +90,13 @@ export const gallery = [
 
 export const services = [
   {
-    title: "24-Hour Drain Clearance",
+    title: "24-Hour Clearance",
     description:
       "Rapid and efficient blockage removal using advanced high-pressure water jetting techniques",
     icon: "FaTools",
   },
   {
-    title: "CCTV Drain Surveys",
+    title: "CCTV Surveys",
     description:
       "Comprehensive inspections to identify structural or functional issues within drainage systems",
     icon: "FaVideo",

@@ -19,7 +19,7 @@ export const aboutTiles = [
     title: "Our Mission",
     description:
       "We are committed to providing reliable and professional drainage services across the UK, helping homeowners and businesses solve their drainage problems quickly and efficiently.",
-    icon: FaBullhorn,
+    icon: "FaBullhorn",
   },
   {
     title: "Our Values",

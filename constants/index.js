@@ -91,37 +91,37 @@ export const services = [
   {
     title: "24-Hour Drain Clearance",
     description:
-      "Rapid and efficient blockage removal using advanced high-pressure water jetting techniques.",
+      "Rapid and efficient blockage removal using advanced high-pressure water jetting techniques",
     icon: "FaTools",
   },
   {
     title: "CCTV Drain Surveys",
     description:
-      "Comprehensive inspections to identify structural or functional issues within drainage systems.",
+      "Comprehensive inspections to identify structural or functional issues within drainage systems",
     icon: "FaVideo",
   },
   {
     title: "Drain Installation",
     description:
-      "Expertly installed drainage systems tailored to meet the highest standards of reliability and efficiency.",
+      "Expertly installed drainage systems tailored to meet the highest standards of reliability and efficiency",
     icon: "FaWrench",
   },
   {
     title: "Drain Investigation",
     description:
-      "Thorough diagnostic assessments to pinpoint underlying drainage concerns with precision.",
+      "Thorough diagnostic assessments to pinpoint underlying drainage concerns with precision",
     icon: "FaSearch",
   },
   {
     title: "Drain Relining & Repair",
     description:
-      "Cost-effective and durable solutions to restore drain integrity without extensive excavation.",
+      "Cost-effective and durable solutions to restore drain integrity without extensive excavation",
     icon: "FaToolbox",
   },
   {
     title: "Septic Tank Maintenance",
     description:
-      "Professional maintenance services to ensure optimal performance and compliance with environmental regulations.",
+      "Professional maintenance services to ensure optimal performance and compliance with environmental regulations",
     icon: "FaRecycle",
   },
 ];

@@ -20,11 +20,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d2b48c; /* tan */
+  background-color: #d2b48c;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #a38f79; /* beige */
+  background-color: #a38f79;
 }
 

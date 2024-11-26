@@ -65,7 +65,7 @@ export default function Contact() {
       id="contact"
       className="py-12 bg-gray-900 text-beige px-6 sm:px-16 lg:px-32"
     >
-      <h2 className="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+      <h2 className="text-3xl font-bold text-tan text-center mb-8">Get in Touch</h2>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

@@ -32,13 +32,11 @@ export const aboutTiles = [
   },
 ];
 
-import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
-
 export const socialLinks = [
-  { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
-  { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },
-  { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { name: "Instagram", href: "tel:07722128784", icon: FaPhone },
+  { name: "Facebook", href: "https://facebook.com", icon: "FaFacebook" },
+  { name: "Twitter", href: "https://twitter.com", icon: "FaTwitter" },
+  { name: "Instagram", href: "https://instagram.com", icon: "FaInstagram" },
+  { name: "Phone", href: "tel:07722128784", icon: "FaPhone" },
 ];
 
 export const gallery = [
@@ -91,18 +89,39 @@ export const gallery = [
 
 export const services = [
   {
-    title: "Expert Services",
-    description: "High-quality drainage solutions",
+    title: "24-Hour Drain Clearance",
+    description:
+      "Rapid and efficient blockage removal using advanced high-pressure water jetting techniques.",
     icon: "FaTools",
   },
   {
-    title: "Affordable Prices",
-    description: "Competitive and transparent pricing",
-    icon: "FaPoundSign",
+    title: "CCTV Drain Surveys",
+    description:
+      "Comprehensive inspections to identify structural or functional issues within drainage systems.",
+    icon: "FaVideo",
   },
   {
-    title: "Experienced Team",
-    description: "Skilled professionals at your service",
-    icon: "FaUsers",
+    title: "Drain Installation",
+    description:
+      "Expertly installed drainage systems tailored to meet the highest standards of reliability and efficiency.",
+    icon: "FaWrench",
+  },
+  {
+    title: "Drain Investigation",
+    description:
+      "Thorough diagnostic assessments to pinpoint underlying drainage concerns with precision.",
+    icon: "FaSearch",
+  },
+  {
+    title: "Drain Relining & Repair",
+    description:
+      "Cost-effective and durable solutions to restore drain integrity without extensive excavation.",
+    icon: "FaToolbox",
+  },
+  {
+    title: "Septic Tank Maintenance",
+    description:
+      "Professional maintenance services to ensure optimal performance and compliance with environmental regulations.",
+    icon: "FaRecycle",
   },
 ];

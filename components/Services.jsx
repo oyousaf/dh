@@ -1,7 +1,7 @@
 import { services } from "@/constants";
-import { FaTools, FaPoundSign, FaUsers } from "react-icons/fa";
+import { FaTools, FaVideo, FaWrench, FaSearch, FaToolbox, FaRecycle } from "react-icons/fa";
 
-const icons = { FaTools, FaPoundSign, FaUsers };
+const icons = { FaTools, FaVideo, FaWrench, FaSearch, FaToolbox, FaRecycle };
 
 export default function Services() {
   return (

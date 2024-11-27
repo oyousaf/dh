@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
               url: "https://drainagehero.uk",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "123 Main Street",
+                streetAddress: "Hawkingcroft Rd",
                 addressLocality: "Horbury",
                 addressRegion: "West Yorkshire",
                 postalCode: "WF4 6AH",

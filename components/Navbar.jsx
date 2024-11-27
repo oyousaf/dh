@@ -55,7 +55,7 @@ export default function Navbar() {
           onClick={toggleMenu}
           className="md:hidden"
         >
-          {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {isOpen ? <FaTimes size={40} /> : <FaBars size={40} />}
         </button>
 
         {/* Desktop Navbar Links */}
@@ -98,7 +98,7 @@ export default function Navbar() {
             animate="visible"
             exit="exit"
             variants={mobileMenuVariants}
-            className="fixed top-0 left-0 w-full h-screen bg-black text-beige flex flex-col z-40"
+            className="fixed top-0 left-0 w-full h-screen bg-black text-beige flex flex-col z-50"
           >
             {/* Close Button */}
             <button
@@ -129,7 +129,7 @@ export default function Navbar() {
 
             {/* Social Media Icons */}
             <motion.div
-              className="w-full flex justify-center space-x-6 mb-10"
+              className="w-full flex justify-center space-x-6 mb-20"
               variants={mobileMenuVariants}
             >
               {socialLinks.map(({ href, icon: Icon }, index) => (

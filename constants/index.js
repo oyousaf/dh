@@ -5,12 +5,15 @@ export const NAV_LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
-import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { MdMail } from "react-icons/md";
 
 export const socialLinks = [
-  { name: "Facebook", href: "https://facebook.com", icon: FaFacebook },
-  { name: "Twitter", href: "https://twitter.com", icon: FaTwitter },
   { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
+  { name: "Facebook", href: "https://www.facebook.com/people/Drainage-Hero/100091557146560/", icon: FaFacebook },
+  { name: "Twitter", href: "https://twitter.com", icon: BsTwitterX },
+  { name: "Email", href: "mailto:wmoore4001@hotmail.co.uk", icon: MdMail },
   { name: "Phone", href: "tel:07722128784", icon: FaPhone },
 ];
 

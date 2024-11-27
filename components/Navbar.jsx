@@ -106,7 +106,7 @@ export default function Navbar() {
               aria-label="Close menu"
               className="absolute top-4 right-4"
             >
-              <FaTimes size={32} />
+              <FaTimes size={40} />
             </button>
 
             {/* Navbar Links */}

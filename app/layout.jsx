@@ -88,6 +88,9 @@ export default function RootLayout({ children }) {
                 "Sowerby Bridge",
                 "West Yorkshire",
               ],
+              sameAs: [
+                "https://www.facebook.com/people/Drainage-Hero/100091557146560/",
+              ]
             }),
           }}
         />

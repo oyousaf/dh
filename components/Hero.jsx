@@ -59,7 +59,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <FaArrowDown size={40} />
+        <FaArrowDown size={50} />
       </motion.button>
     </section>
   );

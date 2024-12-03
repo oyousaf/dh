@@ -11,35 +11,42 @@ import { MdMail } from "react-icons/md";
 
 export const socialLinks = [
   { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { name: "Facebook", href: "https://www.facebook.com/people/Drainage-Hero/100091557146560/", icon: FaFacebook },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/people/Drainage-Hero/100091557146560/",
+    icon: FaFacebook,
+  },
   { name: "Twitter", href: "https://twitter.com", icon: BsTwitterX },
   { name: "Email", href: "mailto:wmoore4001@hotmail.co.uk", icon: MdMail },
   { name: "Phone", href: "tel:07722128784", icon: FaPhone },
 ];
 
+const currentYear = new Date().getFullYear();
+const yearsInBusiness = currentYear - 2023;
+
 export const aboutTiles = [
   {
     title: "Our Mission",
     description:
-      "We are committed to providing reliable and professional drainage services across the UK, helping homeowners and businesses solve their drainage problems quickly and efficiently.",
+      "At Drainage Hero, we are devoted to providing dependable and expertly tailored drainage solutions throughout West Yorkshire. We strive to assist both residential and commercial clients by resolving drainage issues promptly and efficiently, minimising disruption to daily operations.",
     icon: "FaBullhorn",
   },
   {
-    title: "Our Values",
+    title: "Our Core Values",
     description:
-      "Integrity, professionalism, and customer satisfaction are at the core of everything we do. We pride ourselves on being transparent, reliable, and trustworthy.",
+      "We are firmly committed to the principles of integrity, professionalism, and unparalleled customer satisfaction. We believe in transparency, reliability, and trustworthiness, ensuring that every client interaction is characterised by the highest standards of service and ethical conduct.",
     icon: "FaHandshake",
   },
   {
-    title: "Company History",
+    title: "Our History",
     description:
-      "Founded in 2000, Drainage Hero has been providing exceptional drainage solutions to the UK for over two decades, building a reputation for quality and reliability.",
+      `Founded in 2023, Drainage Hero has rapidly established itself as a leader in drainage services within West Yorkshire. With ${yearsInBusiness} years of collective experience, we continue to deliver innovative solutions and set the benchmark for quality and reliability in the industry.`,
     icon: "FaHistory",
   },
   {
     title: "Why Choose Us?",
     description:
-      "We combine expert knowledge, advanced technology, and a customer-first approach to deliver the best drainage services in the industry.",
+      "Our distinctive approach combines extensive expertise, state-of-the-art technology, and a customer-centric ethos. We are dedicated to delivering the highest calibre of drainage services, offering bespoke solutions that are both efficient and cost-effective, ensuring long-term satisfaction.",
     icon: "FaStar",
   },
 ];

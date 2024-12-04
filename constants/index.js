@@ -28,25 +28,25 @@ export const aboutTiles = [
   {
     title: "Our Mission",
     description:
-      "At Drainage Hero, we are devoted to providing dependable and expertly tailored drainage solutions throughout West Yorkshire. We strive to assist both residential and commercial clients by resolving drainage issues promptly and efficiently, minimising disruption to daily operations",
+      "At Drainage Hero, we are devoted to providing dependable and expertly tailored drainage solutions throughout West Yorkshire. We strive to assist both residential and commercial clients by resolving drainage issues promptly and efficiently, minimising disruption to daily operations.",
     icon: "FaBullhorn",
   },
   {
-    title: "Our Core Values",
+    title: "Our Values",
     description:
-      "We are firmly committed to the principles of integrity, professionalism, and unparalleled customer satisfaction. We believe in transparency, reliability, and trustworthiness, ensuring that every client interaction is characterised by the highest standards of service and ethical conduct",
+      "We are firmly committed to the principles of integrity, professionalism, and unparalleled customer satisfaction. We believe in transparency, reliability, and trustworthiness, ensuring that every client interaction is characterised by the highest standards of service and ethical conduct.",
     icon: "FaHandshake",
   },
   {
     title: "Our History",
     description:
-      `Founded in 2023, Drainage Hero has rapidly established itself as a leader in drainage services within West Yorkshire. With ${yearsInBusiness} years of collective experience, we continue to deliver innovative solutions and set the benchmark for quality and reliability in the industry`,
+      `Founded in 2023, Drainage Hero has rapidly established itself as a leader in drainage services within West Yorkshire. With ${yearsInBusiness} years of collective experience, we continue to deliver innovative solutions and set the benchmark for quality and reliability in the industry.`,
     icon: "FaHistory",
   },
   {
     title: "Why Choose Us?",
     description:
-      "Our distinctive approach combines extensive expertise, state-of-the-art technology, and a customer-centric ethos. We are dedicated to delivering the highest calibre of drainage services, offering bespoke solutions that are both efficient and cost-effective, ensuring long-term satisfaction",
+      "Our distinctive approach combines extensive expertise, state-of-the-art technology, and a customer-centric ethos. We are dedicated to delivering the highest calibre of drainage services, offering bespoke solutions that are both efficient and cost-effective, ensuring long-term satisfaction.",
     icon: "FaStar",
   },
 ];

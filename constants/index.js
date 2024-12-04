@@ -54,22 +54,22 @@ export const aboutTiles = [
 export const gallery = [
   {
     id: 1,
-    src: "https://www.drainandsewer.co.uk/wp-content/uploads/Do-your-drains-need-repairing-1.jpg",
+    src: "/images/1.jpg",
     alt: "Gallery Image 1",
   },
   {
     id: 2,
-    src: "https://i.imgur.com/Ym54z2R.jpg",
+    src: "/images/2.jpg",
     alt: "Gallery Image 2",
   },
   {
     id: 3,
-    src: "https://cdn.mos.cms.futurecdn.net/r2yVHzwtrU659ixpzaMfXb-1200-80.jpg",
+    src: "/images/3.jpg",
     alt: "Gallery Image 3",
   },
   {
     id: 4,
-    src: "https://media.istockphoto.com/id/1311303472/photo/newly-made-ditch-for-irrigation-of-fields.jpg?s=612x612&w=0&k=20&c=IuJZbV2z8uedh3b_4kMnBnsjl61cF55fa5s43JNBxcI=",
+    src: "/images/4.jpg",
     alt: "Gallery Image 4",
   },
   {
@@ -79,22 +79,22 @@ export const gallery = [
   },
   {
     id: 6,
-    src: "/images/1.jpg",
+    src: "https://www.drainandsewer.co.uk/wp-content/uploads/Do-your-drains-need-repairing-1.jpg",
     alt: "Gallery Image 6",
   },
   {
     id: 7,
-    src: "/images/2.jpg",
+    src: "https://i.imgur.com/Ym54z2R.jpg",
     alt: "Gallery Image 7",
   },
   {
     id: 8,
-    src: "/images/3.jpg",
+    src: "https://cdn.mos.cms.futurecdn.net/r2yVHzwtrU659ixpzaMfXb-1200-80.jpg",
     alt: "Gallery Image 8",
   },
   {
     id: 9,
-    src: "/images/4.jpg",
+    src: "https://media.istockphoto.com/id/1311303472/photo/newly-made-ditch-for-irrigation-of-fields.jpg?s=612x612&w=0&k=20&c=IuJZbV2z8uedh3b_4kMnBnsjl61cF55fa5s43JNBxcI=",
     alt: "Gallery Image 9",
   },
 ];

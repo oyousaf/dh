@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, socialLinks } from "@/constants";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +46,14 @@ export default function Navbar() {
           aria-label="Scroll to hero section"
           className="text-2xl font-bold hover:text-tan transition-all duration-300 ease-in-out"
         >
-          <img src="/images/logo.png" alt="logo" />
-         {/* Drainage Hero */}
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            width={150}
+            height={50}
+            priority
+          />
+          {/* Drainage Hero */}
         </button>
 
         {/* Hamburger Icon */}

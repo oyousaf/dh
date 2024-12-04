@@ -18,7 +18,7 @@ const contactFormSchema = z.object({
     .string()
     .regex(
       /^(?:\+44|0)\d{10}$/,
-      "Invalid UK phone number. It should start with '+44' or '0' followed by 10 digits."
+      "Invalid phone number. It should start with '+44' or '0' followed by 10 digits."
     )
     .optional(),
   subject: z

@@ -45,7 +45,8 @@ export default function Navbar() {
           aria-label="Scroll to hero section"
           className="text-2xl font-bold hover:text-tan transition-all duration-300 ease-in-out"
         >
-          Drainage Hero
+          <img src="/images/logo.png" alt="logo" />
+         {/* Drainage Hero */}
         </button>
 
         {/* Hamburger Icon */}

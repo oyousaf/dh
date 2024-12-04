@@ -79,22 +79,22 @@ export const gallery = [
   },
   {
     id: 6,
-    src: "https://static.wixstatic.com/media/d58553_9a62d8da8b5941619bccb9615401ed21~mv2.jpg/v1/fill/w_406,h_304,al_c,lg_1,q_80,enc_auto/d58553_9a62d8da8b5941619bccb9615401ed21~mv2.jpg",
+    src: "/images/1.jpg",
     alt: "Gallery Image 6",
   },
   {
     id: 7,
-    src: "https://i.imgur.com/IRe9Zpc.jpg",
+    src: "/images/2.jpg",
     alt: "Gallery Image 7",
   },
   {
     id: 8,
-    src: "https://www.drainagepipe.co.uk/media/wysiwyg/guides-tips/installation/underground-drainage/foul-and-surface-water-drainage.jpg",
+    src: "/images/3.jpg",
     alt: "Gallery Image 8",
   },
   {
     id: 9,
-    src: "https://www.homehow.co.uk/images/drainagecost.jpg",
+    src: "/images/4.jpg",
     alt: "Gallery Image 9",
   },
 ];

@@ -14,6 +14,13 @@ const contactFormSchema = z.object({
     .min(2, "Name must be at least 2 characters")
     .max(50, "Name must be less than 50 characters"),
   email: z.string().email("Invalid email address"),
+  phone: z
+    .string()
+    .regex(
+      /^(?:\+44|0)\d{10}$/,
+      "Invalid UK phone number. It should start with '+44' or '0' followed by 10 digits."
+    )
+    .optional(),
   subject: z
     .string()
     .min(3, "Subject must be at least 3 characters")
@@ -65,7 +72,9 @@ export default function Contact() {
       id="contact"
       className="py-12 bg-gray-900 text-beige px-6 sm:px-16 lg:px-32"
     >
-      <h2 className="text-3xl font-bold text-tan text-center mb-8">Get in Touch</h2>
+      <h2 className="text-3xl font-bold text-tan text-center mb-8">
+        Get in Touch
+      </h2>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,7 +92,7 @@ export default function Contact() {
             <input
               id="name"
               {...register("name")}
-              placeholder="Your Name"
+              placeholder="Name"
               className="w-full p-4 text-beige rounded-lg"
               autoComplete="name"
             />
@@ -98,13 +107,30 @@ export default function Contact() {
             <input
               id="email"
               {...register("email")}
-              placeholder="Your Email"
+              placeholder="Email"
               className="w-full p-4 text-beige rounded-lg"
               autoComplete="email"
             />
             {errors.email && (
               <p className="mt-1 text-red-300 text-sm">
                 {errors.email.message}
+              </p>
+            )}
+          </div>
+          <div>
+            <label htmlFor="phone" className="sr-only">
+              Phone
+            </label>
+            <input
+              id="phone"
+              {...register("phone")}
+              placeholder="Contact number"
+              className="w-full p-4 text-beige rounded-lg"
+              autoComplete="tel"
+            />
+            {errors.phone && (
+              <p className="mt-1 text-red-300 text-sm">
+                {errors.phone.message}
               </p>
             )}
           </div>
@@ -132,7 +158,7 @@ export default function Contact() {
             <textarea
               id="message"
               {...register("message")}
-              placeholder="Your Message"
+              placeholder="Message"
               rows="5"
               className="w-full p-4 text-beige rounded-lg"
               autoComplete="off"

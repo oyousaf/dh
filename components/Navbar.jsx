@@ -105,7 +105,7 @@ export default function Navbar() {
             <button
               onClick={toggleMenu}
               aria-label="Close menu"
-              className="absolute top-4 right-4"
+              className="absolute top-8 right-5"
             >
               <FaTimes size={40} />
             </button>

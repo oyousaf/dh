@@ -35,6 +35,8 @@ const structuredData = {
   description:
     "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
   url: metadata.canonicalUrl,
+  logo: "/favicon.ico",
+  image: "/hero-bg.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Hawkingcroft Rd",

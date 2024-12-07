@@ -6,7 +6,7 @@ import "@/styles/globals.css";
 
 export const metadata = {
   title:
-    "Drainage Hero - Professional Drain Repair & Installation in West Yorkshire",
+    "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
   description:
     "Expert drainage services in Horbury, Wakefield, and surrounding areas. Specialising in drain repair, installation, clearance, and emergency drainage solutions.",
   keywords: [
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "Plumber",
               name: "Drainage Hero",
               description:
                 "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",

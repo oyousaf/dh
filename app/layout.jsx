@@ -25,6 +25,54 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  canonicalUrl: "https://drainagehero.uk",
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  name: "Drainage Hero",
+  description:
+    "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
+  url: metadata.canonicalUrl,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Hawkingcroft Rd",
+    addressLocality: "Horbury",
+    addressRegion: "West Yorkshire",
+    postalCode: "WF4 6AH",
+    addressCountry: "UK",
+  },
+  telephone: "+447722128784",
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "53.659144472588565",
+    longitude: "-1.5673813076082264",
+  },
+  openingHours: "Mo-Su 00:00-23:59",
+  areaServed: [
+    "Horbury",
+    "Wakefield",
+    "Leeds",
+    "Huddersfield",
+    "Pontefract",
+    "Castleford",
+    "Dewsbury",
+    "Ossett",
+    "Batley",
+    "Morley",
+    "Halifax",
+    "Brighouse",
+    "Elland",
+    "Cleckheaton",
+    "Heckmondwike",
+    "Mirfield",
+    "Normanton",
+    "Knottingley",
+    "Sowerby Bridge",
+    "West Yorkshire",
+  ],
+  sameAs: ["https://www.facebook.com/people/Drainage-Hero/100091557146560/"],
 };
 
 export default function RootLayout({ children }) {
@@ -38,61 +86,10 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <link rel="icon" href={metadata.icons.icon} />
-        <link rel="canonical" href="https://drainagehero.uk" />
-
-        {/* Structured Data for Local Business */}
+        <link rel="canonical" href={metadata.canonicalUrl} />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Plumber",
-              name: "Drainage Hero",
-              description:
-                "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
-              url: "https://drainagehero.uk",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Hawkingcroft Rd",
-                addressLocality: "Horbury",
-                addressRegion: "West Yorkshire",
-                postalCode: "WF4 6AH",
-                addressCountry: "UK",
-              },
-              telephone: "+447722128784",
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "53.659144472588565",
-                longitude: "-1.5673813076082264",
-              },
-              openingHours: "Mo-Su 00:00-23:59",
-              areaServed: [
-                "Horbury",
-                "Wakefield",
-                "Leeds",
-                "Huddersfield",
-                "Pontefract",
-                "Castleford",
-                "Dewsbury",
-                "Ossett",
-                "Batley",
-                "Morley",
-                "Halifax",
-                "Brighouse",
-                "Elland",
-                "Cleckheaton",
-                "Heckmondwike",
-                "Mirfield",
-                "Normanton",
-                "Knottingley",
-                "Sowerby Bridge",
-                "West Yorkshire",
-              ],
-              sameAs: [
-                "https://www.facebook.com/people/Drainage-Hero/100091557146560/",
-              ]
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
       <body>

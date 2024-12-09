@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Navbar />
-        <main className="container mx-auto">{children}</main>
+        <main className="container mx-auto relative">{children}</main>
         <Footer />
         <ScrollToTop />
       </body>

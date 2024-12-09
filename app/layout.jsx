@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
-
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -25,7 +24,25 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  canonicalUrl: "https://drainagehero.uk",
+  canonical: "https://drainagehero.uk",
+  openGraph: {
+    title:
+      "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
+    description:
+      "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas.",
+    url: "https://drainagehero.uk",
+    images: ["/hero-bg.jpg"],
+    site_name: "Drainage Hero",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@drainagehero",
+    title:
+      "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
+    description:
+      "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas.",
+    image: "/hero-bg.jpg",
+  },
 };
 
 export const structuredData = (pageUrl) => ({
@@ -34,7 +51,7 @@ export const structuredData = (pageUrl) => ({
   name: "Drainage Hero",
   description:
     "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
-  url: pageUrl || metadata.canonicalUrl,
+  url: pageUrl || metadata.canonical,
   logo: "/favicon.ico",
   image: "/hero-bg.jpg",
   address: {
@@ -81,17 +98,33 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-gb">
       <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        <link rel="icon" href={metadata.icons.icon} />
-        <link rel="canonical" href={metadata.canonicalUrl} />
+        <link rel="canonical" href={metadata.canonical} />
+
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:image" content={metadata.openGraph.images[0]} />
+        <meta property="og:site_name" content={metadata.openGraph.site_name} />
+
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:site" content={metadata.twitter.site} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta
+          name="twitter:description"
+          content={metadata.twitter.description}
+        />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData(metadata.canonicalUrl)),
-          }}
-        />
+          data-scope="jsonld"
+        >
+          {JSON.stringify(structuredData(metadata.canonical))}
+        </script>
       </head>
       <body>
         <Navbar />

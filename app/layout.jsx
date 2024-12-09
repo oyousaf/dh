@@ -5,8 +5,10 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
-  description: "Expert drainage services in Horbury, Wakefield, and surrounding areas. Specialising in drain repair, installation, clearance, and emergency drainage solutions.",
+  title:
+    "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
+  description:
+    "Expert drainage services in Horbury, Wakefield, and surrounding areas. Specialising in drain repair, installation, clearance, and emergency drainage solutions.",
   keywords: [
     "Drainage Hero",
     "drainage services",
@@ -30,7 +32,8 @@ export const structuredData = (pageUrl) => ({
   "@context": "https://schema.org",
   "@type": "Plumber",
   name: "Drainage Hero",
-  description: "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
+  description:
+    "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
   url: pageUrl || metadata.canonicalUrl,
   logo: "/favicon.ico",
   image: "/hero-bg.jpg",

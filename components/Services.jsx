@@ -45,11 +45,8 @@ export default function Services() {
                 src={service.image}
                 alt={service.title}
                 fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                }}
-                className="rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="rounded-lg object-cover object-center"
               />
             </motion.div>
           </motion.div>

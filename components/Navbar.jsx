@@ -85,7 +85,7 @@ export default function Navbar() {
           onClick={toggleMenu}
           className="md:hidden"
         >
-          {isOpen ? <FaTimes size={40} /> : <FaBars size={40} />}
+          {isOpen ? null : <FaBars size={40} />}
         </button>
 
         {/* Desktop Navbar Links */}

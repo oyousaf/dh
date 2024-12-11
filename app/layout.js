@@ -21,6 +21,7 @@ export const metadata = {
     "drain unblocking",
     "professional drainage solutions",
   ].join(", "),
+  metadataBase: new URL('https://drainagehero.uk'),
   icons: {
     icon: "/favicon.ico",
   },

@@ -10,6 +10,11 @@ export default function Hero() {
     transition: { duration: 1 },
   };
 
+  const handleScroll = (sectionId) => {
+    const targetSection = document.getElementById(sectionId);
+    targetSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section
       id="home"
@@ -32,13 +37,13 @@ export default function Hero() {
             {...motionProps}
             transition={{ ...motionProps.transition, duration: 1.2 }}
           >
-            <a
-              href="contact"
+            <button
+              onClick={() => handleScroll("contact")}
               className="bg-primary hover:bg-secondary text-white/80 hover:text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition"
               aria-label="Contact us now for drainage services"
             >
               Get in Touch
-            </a>
+            </button>
           </motion.div>
         </div>
 

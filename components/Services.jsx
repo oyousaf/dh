@@ -7,7 +7,9 @@ import { motion } from "framer-motion";
 export default function Services() {
   return (
     <section id="services" className="py-12 bg-gray text-white">
-      <h2 className="text-3xl md:text-4xl font-semibold text-center text-white mb-8">Services</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold text-center text-white mb-8">
+        Services
+      </h2>
       <div className="max-w-7xl mx-auto px-6">
         {services.map((service, index) => (
           <motion.div
@@ -21,20 +23,20 @@ export default function Services() {
           >
             {/* Text Section */}
             <motion.div
-              className="flex-1 flex justify-center items-center text-center md:text-left p-6"
+              className="flex-1 flex justify-center items-center text-center p-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 * index, duration: 0.5 }}
             >
-              <div>
-                <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="text-gray-300 mt-2">{service.description}</p>
+              <div className="text-center items-center">
+                <h3 className="text-xl font-bold">{service.title}</h3>
+                <p className="mt-2">{service.description}</p>
               </div>
             </motion.div>
 
             {/* Image Section */}
             <motion.div
-              className="relative h-64 md:h-auto md:w-1/2 flex-1 mb-6 md:mb-0"
+              className={`relative h-64 md:h-auto md:w-1/2 flex-1 mb-6 md:mb-0`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 * index, duration: 0.5 }}

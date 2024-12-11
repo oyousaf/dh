@@ -72,10 +72,10 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={200}
+            width={150}
             height={50}
             priority
-            className="md:w-auto h-auto w-1/2"
+            className="md:w-[150px] w-[100px] h-auto"
           />
         </button>
 

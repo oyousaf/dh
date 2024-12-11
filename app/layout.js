@@ -21,7 +21,7 @@ export const metadata = {
     "drain unblocking",
     "professional drainage solutions",
   ].join(", "),
-  metadataBase: new URL('https://drainagehero.uk'),
+  metadataBase: new URL("https://drainagehero.uk"),
   icons: {
     icon: "/favicon.ico",
   },
@@ -120,10 +120,7 @@ export default function RootLayout({ children }) {
         />
         <meta name="twitter:image" content={metadata.twitter.image} />
 
-        <script
-          type="application/ld+json"
-          data-scope="jsonld"
-        >
+        <script type="application/ld+json" data-scope="jsonld">
           {JSON.stringify(structuredData(metadata.canonical))}
         </script>
       </head>

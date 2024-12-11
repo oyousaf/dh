@@ -7,7 +7,7 @@ import { services } from "@/constants";
 export default function Services() {
   return (
     <section className="bg-gray py-20" id="services">
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
           initial={{ opacity: 0 }}

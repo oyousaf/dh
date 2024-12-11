@@ -6,6 +6,7 @@ import Snow from '@/components/Snow';
 import About from '@/components/About';
 import Gallery from '@/components/Gallery';
 import Contact from '@/components/Contact';
+import Reviews from '@/components/Reviews';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Services />
       <Gallery />
       <CTA />
+      <Reviews />
       <Contact />
       <ScrollToTop />
       <Snow />

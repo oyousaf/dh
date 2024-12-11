@@ -18,7 +18,7 @@ export const socialLinks = [
   },
   { name: "Twitter", href: "https://twitter.com", icon: BsTwitterX },
   { name: "Email", href: "mailto:wmoore4001@hotmail.co.uk", icon: MdMail },
-  { name: "Phone", href: "tel:07722128784", icon: FaPhone },
+  { name: "Phone", href: "tel:+447722128784", icon: FaPhone },
 ];
 
 import { FaPhoneAlt, FaSmile, FaLaptop } from "react-icons/fa";
@@ -52,7 +52,6 @@ export const tiles = [
     text: "100% satisfaction guarantee",
   },
 ];
-
 
 export const services = [
   {
@@ -120,11 +119,34 @@ export const gallery = [
   },
 ];
 
-export const heroContent = {
+export const CTAContent = {
   title: "Professional Drainage Services",
   description:
     "We provide reliable and expert drainage solutions for residential and commercial clients across West Yorkshire.",
   buttonText: "Get a Quote",
-  buttonLink: "/contact",
-  image: "/images/hero-bg.jpg",
+  buttonLink: "tel:+447722128784",
 };
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Daniel",
+    content: "Very professional and got my drainage unblocked fast.",
+  },
+  {
+    id: 2,
+    name: "Lois",
+    content:
+      "Excellent service, didn’t have to wait long. Nice Lad, would highly recommend.",
+  },
+  {
+    id: 3,
+    name: "Ashley",
+    content: "Had a blocked pipe in’t upstairs bathroom due to mr’s going an all you can eat Chinese. Turned up on time, was very professional and prices were much cheaper than quoted elsewhere. Would recommend!",
+  },
+  {
+    id: 4,
+    name: "Reece",
+    content: "Top quality service from top quality lads, highly recommend 👍🏻",
+  },
+];

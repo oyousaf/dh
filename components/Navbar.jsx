@@ -61,7 +61,7 @@ export default function Navbar() {
     ));
 
   return (
-    <nav className="fixed top-0 w-full bg-black text-primary shadow-md z-50">
+    <nav className="fixed top-0 w-full bg-black text-primary shadow-md z-50 p-3">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <button

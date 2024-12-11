@@ -3,7 +3,7 @@
 import { reviews } from "@/constants";
 import { motion } from "framer-motion";
 
-const Reviews = () => {
+export default function Reviews() {
   return (
     <section id="reviews" className="bg-gray py-20">
       <h2 className="text-3xl md:text-4xl font-semibold text-center text-white mb-6">Reviews</h2>
@@ -24,5 +24,3 @@ const Reviews = () => {
     </section>
   );
 };
-
-export default Reviews;

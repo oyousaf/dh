@@ -55,6 +55,7 @@ export const tiles = [
 
 export const services = [
   {
+    id: 1,
     title: "24-Hour Clearance",
     description:
       "Rapid and efficient blockage removal using advanced high-pressure water jetting techniques",

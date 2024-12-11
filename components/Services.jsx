@@ -1,55 +1,45 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
 import { services } from "@/constants";
+import Image from "next/image";
 
 export default function Services() {
   return (
-    <section className="bg-gray py-20" id="services">
+    <section id="services" className="py-12 bg-gray-100">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8">
+        Services
+      </h2>
       <div className="max-w-7xl mx-auto px-6">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Services
-        </motion.h2>
-
-        <div className="space-y-12">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className={`flex flex-col lg:flex-row items-center ${
-                index % 2 === 0 ? "lg:flex-row-reverse" : ""
-              } bg-primary p-8 rounded-lg shadow-lg`}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              {/* Image Section */}
-              <div className="lg:w-1/2 w-full relative aspect-w-16 aspect-h-9 rounded-md">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-contain rounded-lg shadow-lg"
-                  priority
-                />
+        {services.map((service, index) => (
+          <div
+            key={service.id}
+            className={`flex flex-col md:flex-row mb-12 ${
+              index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+            }`}
+          >
+            {/* Text Section */}
+            <div className="flex-1 flex justify-center items-center text-center md:text-left p-6">
+              <div>
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="text-gray-600 mt-2">{service.description}</p>
               </div>
+            </div>
 
-              {/* Text Section */}
-              <div className="lg:w-1/2 w-full lg:px-12 mt-6 lg:mt-0 text-center lg:text-left">
-                <h3 className="text-2xl font-bold text-white">
-                  {service.title}
-                </h3>
-                <p className="mt-4 text-white text-sm">{service.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            {/* Image Section */}
+            <div className="relative h-64 md:h-auto md:w-1/2 flex-1 mb-6 md:mb-0">
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

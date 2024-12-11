@@ -5,7 +5,7 @@ export const navLinks = [
   { id: "contact", label: "Contact" },
 ];
 
-import { FaFacebook, FaInstagram, FaPhone, FaVideo } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 
@@ -20,6 +20,39 @@ export const socialLinks = [
   { name: "Email", href: "mailto:wmoore4001@hotmail.co.uk", icon: MdMail },
   { name: "Phone", href: "tel:07722128784", icon: FaPhone },
 ];
+
+import { FaPhoneAlt, FaSmile, FaLaptop } from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+
+export const tiles = [
+  {
+    id: 1,
+    icon: <FaPhoneAlt size={50} />,
+    text: "24/7/365 emergency callouts",
+  },
+  {
+    id: 2,
+    icon: <FaSmile size={50} />,
+    text: "Friendly & approachable professionals",
+  },
+  {
+    id: 3,
+    icon: <FaLaptop size={50} />,
+    text: "State-of-the-art technology",
+  },
+  {
+    id: 4,
+    icon: <MdSecurity size={50} />,
+    text: "Fully insured & secure services",
+  },
+  {
+    id: 5,
+    icon: <AiOutlineCheckCircle size={50} />,
+    text: "100% satisfaction guarantee",
+  },
+];
+
 
 export const services = [
   {
@@ -95,35 +128,3 @@ export const heroContent = {
   buttonLink: "/contact",
   image: "/images/hero-bg.jpg",
 };
-
-import { FaPhoneAlt, FaSmile, FaLaptop } from "react-icons/fa";
-import { MdSecurity } from "react-icons/md";
-import { AiOutlineCheckCircle } from "react-icons/ai";
-
-export const tiles = [
-  {
-    id: 1,
-    icon: <FaPhoneAlt size={50} />,
-    text: "24/7/365 emergency callouts",
-  },
-  {
-    id: 2,
-    icon: <FaSmile size={50} />,
-    text: "Friendly & approachable professionals",
-  },
-  {
-    id: 3,
-    icon: <FaLaptop size={50} />,
-    text: "State-of-the-art technology",
-  },
-  {
-    id: 4,
-    icon: <MdSecurity size={50} />,
-    text: "Fully insured & secure services",
-  },
-  {
-    id: 5,
-    icon: <AiOutlineCheckCircle size={50} />,
-    text: "100% satisfaction guarantee",
-  },
-];

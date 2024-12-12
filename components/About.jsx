@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function About() {
   return (
     <section className="text-white py-20">
-      <div className="container mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6"
           initial={{ opacity: 0 }}

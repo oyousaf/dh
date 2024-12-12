@@ -4,7 +4,7 @@ import { gallery } from "@/constants";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="py-12 container mx-auto px-6">
+    <section id="gallery" className="py-12 max-w-7xl mx-auto px-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Our Work
       </h2>

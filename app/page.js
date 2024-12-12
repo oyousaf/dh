@@ -1,16 +1,16 @@
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 import Services from '@/components/Services';
+import Gallery from '@/components/Gallery';
 import CTA from '@/components/CTA';
+import Reviews from '@/components/Reviews';
+import Contact from '@/components/Contact';
 import ScrollToTop from '@/components/ScrollToTop';
 import Snow from '@/components/Snow';
-import About from '@/components/About';
-import Gallery from '@/components/Gallery';
-import Contact from '@/components/Contact';
-import Reviews from '@/components/Reviews';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div >
+    <>
       <Hero />
       <About />
       <Services />
@@ -20,6 +20,6 @@ export default function HomePage() {
       <Contact />
       <ScrollToTop />
       <Snow />
-    </div>
+    </>
   );
 }

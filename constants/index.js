@@ -139,7 +139,7 @@ export const reviews = [
     id: 2,
     name: "Lois",
     content:
-      "Excellent service, didn’t have to wait long. Nice Lad, would highly recommend.",
+      "Excellent service, didn’t have to wait long. Nice lad, would highly recommend.",
   },
   {
     id: 3,

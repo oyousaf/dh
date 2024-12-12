@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Services() {
   return (
     <section id="services" className="py-12 bg-gray text-white">
-      <h2 className="text-3xl md:text-4xl font-semibold text-center text-white mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Services
       </h2>
       <div className="max-w-7xl mx-auto px-6">
@@ -29,7 +29,7 @@ export default function Services() {
               transition={{ delay: 0.2 * index, duration: 0.5 }}
             >
               <div className="text-center items-center">
-                <h3 className="text-xl font-bold">{service.title}</h3>
+                <h3 className="text-3xl font-bold">{service.title}</h3>
                 <p className="mt-2">{service.description}</p>
               </div>
             </motion.div>

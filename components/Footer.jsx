@@ -14,7 +14,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-beige py-6 text-center">
+    <footer className="bg-black py-6 text-center">
       <p className="text-lg">&copy; {currentYear} Drainage Hero</p>
       <p>All rights reserved</p>
       <div className="flex justify-center space-x-4 mt-4">
@@ -24,7 +24,7 @@ export default function Footer() {
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="text-beige hover:text-tan"
+            className="hover:text-secondary"
             whileHover="hover"
             variants={socialIconVariants}
           >

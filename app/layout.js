@@ -4,22 +4,18 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title:
-    "Drainage Hero - Professional Drain Repair & Installation in West Yorkshire",
-  description:
-    "Expert drainage services in Horbury, Wakefield, and surrounding areas. Specialising in drain repair, installation, clearance, and emergency drainage solutions.",
+  title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+  description: "Need reliable drainage services in Horbury, Wakefield, or West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
   keywords: [
     "Drainage Hero",
     "drainage services",
-    "drain repair",
-    "drain installation",
-    "drain clearance",
+    "drain repair West Yorkshire",
+    "drain installation Horbury",
+    "blocked drains Wakefield",
     "emergency drain repair",
-    "Horbury",
-    "Wakefield",
-    "blocked drains",
-    "drain unblocking",
     "professional drainage solutions",
+    "affordable drain repair West Yorkshire",
+    "licensed drainage specialists Wakefield"
   ].join(", "),
   metadataBase: new URL("https://drainagehero.uk"),
   icons: {
@@ -27,10 +23,8 @@ export const metadata = {
   },
   canonical: "https://drainagehero.uk",
   openGraph: {
-    title:
-      "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
-    description:
-      "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas.",
+    title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+    description: "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas. Contact us for professional solutions.",
     url: "https://drainagehero.uk",
     images: ["/hero-bg.jpg"],
     site_name: "Drainage Hero",
@@ -38,10 +32,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@drainagehero",
-    title:
-      "Drainage Hero | Professional Drain Repair & Installation in West Yorkshire",
-    description:
-      "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas.",
+    title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+    description: "Drainage Hero provides expert drainage services in West Yorkshire. Contact us for professional solutions.",
     image: "/hero-bg.jpg",
   },
 };
@@ -50,8 +42,7 @@ export const structuredData = (pageUrl) => ({
   "@context": "https://schema.org",
   "@type": "Plumber",
   name: "Drainage Hero",
-  description:
-    "Professional drainage services including repair, installation, and clearance in Horbury, Wakefield, and nearby areas.",
+  description: "Professional drainage services including repair, installation, and clearance in West Yorkshire",
   url: pageUrl || metadata.canonical,
   logo: "/favicon.ico",
   image: "/hero-bg.jpg",
@@ -92,6 +83,28 @@ export const structuredData = (pageUrl) => ({
     "Sowerby Bridge",
     "West Yorkshire",
   ],
+  service: [
+    {
+      "@type": "Service",
+      name: "Drain Repair",
+      description: "Comprehensive repair services for blocked and damaged drains."
+    },
+    {
+      "@type": "Service",
+      name: "Drain Installation",
+      description: "Professional installation services for new drainage systems."
+    },
+    {
+      "@type": "Service",
+      name: "Emergency Drainage Solutions",
+      description: "24/7 emergency drain unblocking and clearance services."
+    }
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "9",
+  },
   sameAs: ["https://www.facebook.com/people/Drainage-Hero/100091557146560/"],
 });
 

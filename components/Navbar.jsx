@@ -84,13 +84,13 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={toggleMenu}
-          className="md:hidden"
+          className="lg:hidden"
         >
           {isOpen ? null : <FaBars size={40} />}
         </button>
 
         {/* Desktop Navbar Links */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden lg:flex space-x-6">
           {navLinks.map(({ id, label }) => (
             <li key={id}>
               <button
@@ -105,7 +105,7 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop Social Media Icons */}
-        <div className="hidden md:flex space-x-4">{renderSocialIcons(30)}</div>
+        <div className="hidden lg:flex space-x-4">{renderSocialIcons(30)}</div>
       </div>
 
       {/* Mobile Menu */}

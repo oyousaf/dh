@@ -28,15 +28,14 @@ const variants = {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleScroll = (sectionId) => {
-    const targetSection = document.getElementById(sectionId);
-    targetSection?.scrollIntoView({ behavior: "smooth", block: "start" });
-    closeMenu();
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+    document.body.style.overflow = isOpen ? "auto" : "hidden";
   };
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    document.body.style.overflow = isOpen ? "auto" : "hidden";
+  const handleScroll = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    closeMenu();
   };
 
   const closeMenu = () => {
@@ -66,17 +65,19 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => handleScroll("home")}
-          aria-label="Scroll to the hero section at the top of the page"
+          aria-label="Scroll to home section"
           className="p-2 focus:outline-none"
         >
-          <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={150}
-            height={50}
-            priority
-            className="md:w-[150px] w-[100px] h-auto"
-          />
+          <div className="relative w-[100px] h-[50px] md:w-[200px] md:h-[70px]">
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              fill
+              priority
+              sizes="(max-width: 768px) 100px, (max-width: 1024px) 200px"
+              className="object-contain"
+            />
+          </div>
         </button>
 
         {/* Hamburger Icon */}
@@ -117,7 +118,6 @@ export default function Navbar() {
             variants={variants.mobileMenu}
             className="fixed top-0 left-0 w-full h-screen bg-black text-beige flex flex-col z-50"
           >
-            {/* Close Button */}
             <button
               onClick={toggleMenu}
               aria-label="Close menu"
@@ -132,7 +132,7 @@ export default function Navbar() {
                 <motion.li key={id} variants={variants.menuItem}>
                   <button
                     onClick={() => handleScroll(id)}
-                    className="text-2xl font-bold uppercase mt-3 hover:text-secondary transition-all duration-300 ease-in-out"
+                    className="text-2xl font-bold uppercase hover:text-secondary transition-all duration-300 ease-in-out"
                     aria-label={`Navigate to ${label}`}
                   >
                     {label}
@@ -142,12 +142,7 @@ export default function Navbar() {
             </motion.ul>
 
             {/* Mobile Social Media Icons */}
-            <motion.div
-              className="w-full flex justify-center space-x-6 mb-20"
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-            >
+            <motion.div className="w-full flex justify-center space-x-6 mb-20">
               {renderSocialIcons(32)}
             </motion.div>
           </motion.div>

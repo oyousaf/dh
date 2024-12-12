@@ -37,6 +37,7 @@ export default function Services() {
             {/* Image Section */}
             <motion.div
               className={`relative h-64 md:h-auto md:w-1/2 flex-1 mb-6 md:mb-0`}
+              style={{ height: "400px" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 * index, duration: 0.5 }}
@@ -44,9 +45,9 @@ export default function Services() {
               <Image
                 src={service.image}
                 alt={service.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="rounded-lg object-cover object-center"
+                width={500}
+                height={300}
+                className="rounded-lg object-cover object-center w-full h-full"
               />
             </motion.div>
           </motion.div>

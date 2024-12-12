@@ -16,7 +16,7 @@ export default function Reviews() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 * review.id, duration: 0.5 }}
           >
-            <p className="text-xl font-semibold">{review.name}</p>
+            <p className="text-2xl font-semibold">{review.name}</p>
             <p className="text-gray-600 mt-2">{review.content}</p>
           </motion.div>
         ))}

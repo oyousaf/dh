@@ -21,7 +21,7 @@ export default function Footer() {
 
       <div className="md:text-lg text-md">
         <address className="not-italic">
-          <p>Hawkingcroft Rd, Horbury, Wakefield WF4 6AH</p>
+          <p>Hawkingcroft Rd, Horbury, Wakefield, WF4 6AH</p>
           <p className="mt-2">
             <a
               href="tel:+447722128784"

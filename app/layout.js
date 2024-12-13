@@ -11,7 +11,7 @@ export const metadata = {
     "Drain Hero",
     "drainage services",
     "drain repair West Yorkshire",
-    "drain installation Horbury",
+    "drain installation West Yorkshire",
     "blocked drains Wakefield",
     "emergency drain repair",
     "professional drainage solutions",

@@ -8,6 +8,7 @@ export const metadata = {
   description: "Need reliable drainage services in West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
   keywords: [
     "Drainage Hero",
+    "Drain Hero",
     "drainage services",
     "drain repair West Yorkshire",
     "drain installation Horbury",

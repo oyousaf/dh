@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 
 export const metadata = {
   title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
-  description: "Need reliable drainage services in Horbury, Wakefield, or West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
+  description: "Need reliable drainage services in West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
   keywords: [
     "Drainage Hero",
     "drainage services",

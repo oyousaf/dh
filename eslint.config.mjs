@@ -4,22 +4,10 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export default [
-  {
-    files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
-    languageOptions: {
-      parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "module",
-      },
-    },
-    plugins: [],
-    rules: {
-    },
-    settings: {},
+export default {
+  extends: ["next/core-web-vitals"],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
   },
-  {
-    files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
-    extends: ["next/core-web-vitals"],
-  },
-];
+};

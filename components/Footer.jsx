@@ -19,7 +19,7 @@ export default function Footer() {
         &copy; {currentYear} Drainage Hero. All rights reserved.
       </p>
 
-      <div className="md:text-lg text-md">
+      <div className="md:text-lg text-md relative z-10">
         <address className="not-italic">
           <p>Hawkingcroft Rd, Horbury, Wakefield, WF4 6AH</p>
           <p className="mt-2">
@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
 
       <div
-        className="flex justify-center space-x-4 mt-6"
+        className="flex justify-center space-x-4 mt-6 relative z-10"
         aria-label="Social media links"
       >
         {socialLinks.map(({ href, icon: Icon, name }, index) => (

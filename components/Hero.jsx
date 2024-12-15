@@ -21,7 +21,7 @@ export default function Hero() {
       className="relative bg-gradient-to-b from-black via-gray to-primary text-white md:pt-40 pt-28 pb-20"
     >
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left z-10">
           <motion.h1
             className="text-5xl md:text-6xl font-extrabold leading-tight"
             {...motionProps}
@@ -47,7 +47,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="md:w-1/2 mt-8 md:mt-0 relative w-full h-[500px]">
+        <div className="md:w-1/2 mt-8 md:mt-0 relative w-full h-[500px] z-10">
           <Image
             src="/hero-bg.jpg"
             alt="Drainage Experts"

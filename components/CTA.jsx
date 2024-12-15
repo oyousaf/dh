@@ -1,4 +1,3 @@
-import React from "react";
 import { CTAContent } from "@/constants";
 
 const CTA = () => {
@@ -10,7 +9,7 @@ const CTA = () => {
       <p className="mb-6 text-lg">{CTAContent.description}</p>
       <a
         href={CTAContent.buttonLink}
-        className="bg-secondary text-white hover:text-gray py-3 px-8 rounded-lg text-lg font-semibold transition duration-300"
+        className="bg-secondary relative z-10 text-white hover:text-gray py-3 px-8 rounded-lg text-lg font-semibold transition duration-300"
       >
         {CTAContent.buttonText}
       </a>

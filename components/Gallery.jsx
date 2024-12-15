@@ -8,7 +8,7 @@ const Gallery = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Our Work
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
         {gallery.map((image) => (
           <div
             key={image.id}

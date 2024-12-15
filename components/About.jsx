@@ -8,7 +8,7 @@ export default function About() {
     <section className="text-white py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -30,7 +30,7 @@ export default function About() {
                 }}
               >
                 <div className="text-6xl mb-4">{icon}</div>
-                <p className="text-sm md:text-base text-center text-gray-200">
+                <p className="text-sm md:text-base text-center">
                   {text}
                 </p>
               </motion.div>

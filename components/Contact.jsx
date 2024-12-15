@@ -79,7 +79,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8"
+        className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10"
       >
         <div className="p-8 rounded-lg shadow-md">
           <iframe

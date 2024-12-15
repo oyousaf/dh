@@ -7,7 +7,7 @@ const Snow = () => {
 
   if (!isDecember) return null;
 
-  return <Snowfall style={{ position: "fixed", zIndex: -1 }} />;
+  return <Snowfall style={{ position: "fixed", zIndex: 5 }} />;
 };
 
 export default Snow;

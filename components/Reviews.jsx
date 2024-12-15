@@ -11,7 +11,7 @@ export default function Reviews() {
         {reviews.map((review) => (
           <motion.div
             key={review.id}
-            className="bg-primary text-white p-6 rounded-lg shadow-lg"
+            className="bg-primary text-white p-6 rounded-lg shadow-lg relative z-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 * review.id, duration: 0.5 }}

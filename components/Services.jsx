@@ -14,7 +14,7 @@ export default function Services() {
         {services.map((service, index) => (
           <motion.div
             key={service.id}
-            className={`flex flex-col md:flex-row mb-12 bg-primary rounded-md p-3 ${
+            className={`flex flex-col md:flex-row mb-12 bg-primary rounded-md p-3 relative z-10 ${
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
             initial={{ opacity: 0, y: 20 }}

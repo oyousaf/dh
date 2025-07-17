@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="text-white py-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="text-white py-20" aria-labelledby="about-heading">
+      <div aria-labelledby="about-heading" className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10"
           initial={{ opacity: 0 }}

@@ -4,8 +4,10 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
-  description: "Need reliable drainage services in West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
+  title:
+    "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+  description:
+    "Need reliable drainage services in West Yorkshire? Contact Drainage Hero for expert drain repairs, installation, and unblocking. Available 24/7!",
   keywords: [
     "Drainage Hero",
     "Drain Hero",
@@ -16,35 +18,55 @@ export const metadata = {
     "emergency drain repair",
     "professional drainage solutions",
     "affordable drain repair West Yorkshire",
-    "licensed drainage specialists Wakefield"
+    "licensed drainage specialists Wakefield",
   ].join(", "),
   metadataBase: new URL("https://drainagehero.uk"),
   icons: {
     icon: "/favicon.ico",
   },
-  canonical: "https://drainagehero.uk",
+  alternates: {
+    canonical: "https://drainagehero.uk",
+  },
   openGraph: {
-    title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
-    description: "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas. Contact us for professional solutions.",
+    title:
+      "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+    description:
+      "Drainage Hero provides expert drainage services in Horbury, Wakefield, and surrounding areas. Contact us for professional solutions.",
     url: "https://drainagehero.uk",
-    images: ["/hero-bg.jpg"],
-    site_name: "Drainage Hero",
+    images: [
+      {
+        url: "/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Drainage Hero van parked on site",
+      },
+    ],
+    siteName: "Drainage Hero",
+    locale: "en_GB",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@drainagehero",
-    title: "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
-    description: "Drainage Hero provides expert drainage services in West Yorkshire. Contact us for professional solutions.",
-    image: "/hero-bg.jpg",
+    title:
+      "Drainage Hero - Drain Repair, Installation & Clearance in West Yorkshire",
+    description:
+      "Drainage Hero provides expert drainage services in West Yorkshire. Contact us for professional solutions.",
+    images: ["/hero-bg.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-export const structuredData = (pageUrl) => ({
+const structuredData = (pageUrl) => ({
   "@context": "https://schema.org",
   "@type": "Plumber",
   name: "Drainage Hero",
-  description: "Professional drainage services including repair, installation, and clearance in West Yorkshire",
-  url: pageUrl || metadata.canonical,
+  description:
+    "Professional drainage services including repair, installation, and clearance in West Yorkshire",
+  url: pageUrl || metadata.alternates.canonical,
   logo: "/favicon.ico",
   image: "/hero-bg.jpg",
   address: {
@@ -88,18 +110,20 @@ export const structuredData = (pageUrl) => ({
     {
       "@type": "Service",
       name: "Drain Repair",
-      description: "Comprehensive repair services for blocked and damaged drains."
+      description:
+        "Comprehensive repair services for blocked and damaged drains.",
     },
     {
       "@type": "Service",
       name: "Drain Installation",
-      description: "Professional installation services for new drainage systems."
+      description:
+        "Professional installation services for new drainage systems.",
     },
     {
       "@type": "Service",
       name: "Emergency Drainage Solutions",
-      description: "24/7 emergency drain unblocking and clearance services."
-    }
+      description: "24/7 emergency drain unblocking and clearance services.",
+    },
   ],
   aggregateRating: {
     "@type": "AggregateRating",
@@ -111,37 +135,27 @@ export const structuredData = (pageUrl) => ({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-gb">
+    <html lang="en-GB" className="scroll-smooth antialiased">
       <head>
-        <meta name="keywords" content={metadata.keywords} />
-        <link rel="canonical" href={metadata.canonical} />
-
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta
-          property="og:description"
-          content={metadata.openGraph.description}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              structuredData(metadata.alternates.canonical)
+            ),
+          }}
         />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:image" content={metadata.openGraph.images[0]} />
-        <meta property="og:site_name" content={metadata.openGraph.site_name} />
-
-        <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:site" content={metadata.twitter.site} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta
-          name="twitter:description"
-          content={metadata.twitter.description}
-        />
-        <meta name="twitter:image" content={metadata.twitter.image} />
-
-        <script type="application/ld+json" data-scope="jsonld">
-          {JSON.stringify(structuredData(metadata.canonical))}
-        </script>
       </head>
       <body>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <header>
+          <Navbar />
+        </header>
+        <main aria-label="Drainage Hero Main Content" className="min-h-screen">
+          {children}
+        </main>
+        <footer>
+          <Footer />
+        </footer>
         <ScrollToTop />
       </body>
     </html>

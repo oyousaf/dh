@@ -2,8 +2,8 @@ import { CTAContent } from "@/constants";
 
 const CTA = () => {
   return (
-    <section className="bg-primary py-16 px-6 text-white text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+    <section aria-labelledby="cta-heading" className="bg-primary py-16 px-6 text-white text-center">
+      <h2 aria-labelledby="cta-heading" className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         {CTAContent.title}
       </h2>
       <p className="mb-6 text-lg">{CTAContent.description}</p>

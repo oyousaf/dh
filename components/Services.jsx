@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 export default function Services() {
   return (
-    <section id="services" className="py-12 bg-gray text-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+    <section id="services" aria-labelledby="services-heading" className="py-12 bg-gray text-white">
+      <h2 aria-labelledby="services-heading" className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Services
       </h2>
       <div className="max-w-7xl mx-auto px-6">

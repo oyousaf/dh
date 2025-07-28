@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title:
@@ -157,6 +158,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </footer>
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   );

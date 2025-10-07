@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* ─── CSS Custom Properties ───────────────────────────────────── */
+:root {
+  --background: #0f2f23;
+  --foreground: #fff;
+  --accent-green: #59ae6a;
+  --dark-mint: #357e57;
+  --mossy-bg: #0f2f23;
+
+  --font-sans: "Inter", sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ─── Dark Mode Overrides ─────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--mossy-bg);
+    --foreground: #ededed;
+  }
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────── */
+html {
+  color-scheme: light dark;
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Hide scrollbars for clean UI */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Transitions ─────────────────────────────────────────────── */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ─── Securing assets ─────────────────────────────────────────── */
+img,
+video {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ─── Gradient shift ──────────────────────────────────────────── */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradientShift 25s ease infinite;
+}

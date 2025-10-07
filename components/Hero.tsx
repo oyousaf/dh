@@ -47,7 +47,7 @@ export default function Hero() {
           <Image
             src="/logo.webp"
             alt="Legxcy Solutions Logo"
-            width={80}
+            width={200}
             height={80}
             priority
           />

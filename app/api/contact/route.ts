@@ -10,7 +10,6 @@ interface ContactRequestBody {
   email: string;
   message: string;
   website?: string;
-  token: string;
 }
 
 const sanitize = (str: string) =>
@@ -26,38 +25,20 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { name, email, message, website, token } = body;
+  const { name, email, message, website } = body;
   const firstName = sanitize(name).split(" ")[0];
 
-  // Honeypot check
+  // 🧠 Honeypot check
   if (website) {
     return NextResponse.json({ error: "Bot detected" }, { status: 400 });
   }
 
-  // Required fields check
-  if (!name || !email || !message || !token) {
+  // 🧠 Required fields check
+  if (!name || !email || !message) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
-  // Verify Turnstile
-  const captchaRes = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: `secret=${process.env.TURNSTILE_SECRET_KEY}&response=${token}`,
-    }
-  );
-
-  const captchaData = (await captchaRes.json()) as { success: boolean };
-  if (!captchaData.success) {
-    return NextResponse.json(
-      { error: "Failed captcha verification" },
-      { status: 403 }
-    );
-  }
-
-  // Rate limit
+  // 🧠 Rate limit
   try {
     await limiter.consume(ip);
   } catch {
